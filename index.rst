@@ -11,6 +11,13 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   introduction 
+
+   task_structure
+
+   scheduler 
+
+
 
 
 Indices and tables
