@@ -1,9 +1,9 @@
-.. CdGen documentation master file, created by
+.. CDGen documentation master file, created by
    sphinx-quickstart on Wed Aug 14 13:44:23 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to CdGen's documentation!
+Welcome to CDGen's documentation!
 =================================
 
 Contents:
@@ -13,12 +13,17 @@ Contents:
 
    introduction 
 
+   ParallellaHardware
+
+   Setup_Instruction
+
+   scheduler
+
    task_structure
 
-   scheduler 
+   Label_management
 
-
-
+   GUI_Layout
 
 Indices and tables
 ==================
