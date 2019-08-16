@@ -12,8 +12,5 @@ User Guide
 APP4MC Setup
 -------------------------
 
-APP4MC Setup
--------------------------
-
 Deployment Setup
 -------------------------
