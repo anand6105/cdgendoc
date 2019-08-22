@@ -5,7 +5,7 @@ Tasks in the AMALTHEA software model are the abstract class Process generalizes 
 
 Task structure and creation for RMS
 -----------------------------------
-Rate Monotonic Scheduler is based on the Project RTFParallella_. 
+Rate Monotonic Scheduler is based on the Project RTFParallella_. More details are available in the corresponding documentation.
 
 Task structure and creation for FreeRTOS
 ----------------------------------------
