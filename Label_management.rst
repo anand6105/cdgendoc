@@ -17,9 +17,9 @@ Shared labels are labels which are common to many tasks which are mapped to diff
 
 Below are function template for read and write
 
-.. code-block:: bash
+.. code-block:: cpp
 
-   void shared_label_<labelSize>_write(int label_indx,int payload)
+   void shared_label_<labelSize>_write(int label_indx,<labelDataType> payload)
 
    <labelDataType> shared_label_<labelSize>_read(int label_indx)
 
