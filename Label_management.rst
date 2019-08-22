@@ -29,6 +29,10 @@ Label management for core labels
 ---------------------------------
 Core labels are shared among tasks which are mapped to the same core. As the file structure are devised in such a way those are core specific. In adittion to the read and the write operations which are performed from Copy In and Copy out function respectively in the label file it is also intialised outside as a generic one.
 
+Label management for Task labels
+---------------------------------
+Task labels are labels which are specific to a certain tasks. These labels are defined as local variables within the scope of the task.
+
 *Inorder to encounter each cOUT operation, Incrementation of the variable is implemented just before the write operation.
 
 

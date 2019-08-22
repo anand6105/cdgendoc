@@ -13,6 +13,12 @@ The CDGen is an application using Eclipse APP4MC for model to text conversion us
 
 The project deals with creating an application which is capable of generating the code from the System Model. The System Model contains the information required to simulate, analyze and optimize performance. It contains extensive information about software, hardware, timing behavior, and constraints for the system under development.  This application is planned in a systematic approach with a lot of flexibility. CDGen enhances a user-friendly experience. Below is the list of action items in the plan.
 
+Requirement
+-------------------------
+*	APP4MC_	V 0.9.5 
+*	JAVA_ 10 SE
+*	Scheduler_ SourceCode	
+
 Configuration
 -------------------------
 There are 6 main scheduling configuration available in this tool:
@@ -30,9 +36,10 @@ Deliverables
 *	SourceCode_ for the CDGen
 *	Documentation
 
-.. _SourceCode : 
-
-
+.. _SourceCode : https://github.com/rprasathg/cdgen
+.. _APP4MC : https://www.eclipse.org/app4mc/downloads/
+.. _JAVA : https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase10-4425482.html
+.. _Scheduler : https://git.eclipse.org/c/app4mc/org.eclipse.app4mc.examples.git/commit/?id=69a0a24f120bb0d79cbd688081ca697368e252f7
 
 
 
