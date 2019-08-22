@@ -5,14 +5,45 @@ Tasks in the AMALTHEA software model are the abstract class Process generalizes 
 
 Task structure for POSIX
 -------------------------
-
 .. code-block:: cpp
+void v<TaskName>( )
+{
+	for( ;; )
+	{
+		//cIN operation
+		cIN_<TaskName>();
 
+		
+		//Runnable call
+		<Runnable1 Name>();
+		<Runnable2 Name>();
+		.
+		.
+		<Runnable'n' Name>();
+
+		updateDebugFlag(<debugMessage>);
+		sleepTimerMs(<TaskExecutionTime> , <TaskID>);
+		<taskSpecificCounter>++;
+		traceTaskPasses(<TaskID>, <taskSpecificCounter>);
+		traceRunningTask(<TaskID>);
+
+		//cOUT operation
+		cOUT_<TaskName>();
+	}	
+}
 
 Task structure for RMS
 -------------------------
-
 .. code-block:: cpp
+void v<TaskName>( )
+{
+	updateDebugFlag(<debugMessage>);
+	sleepTimerMs(<TaskExecutionTime> , <TaskID>);
+	<taskSpecificCounter>++;
+	traceTaskPasses(<TaskID>, <taskSpecificCounter>);
+	traceRunningTask(<TaskID>);
+}
+
 
 Task structure for FreeRTOS
 ----------------------------
