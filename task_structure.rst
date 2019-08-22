@@ -1,13 +1,11 @@
 #################################
 Task Structure and Task Creation
 #################################
-Tasks in the AMALTHEA software model are the abstract class Process generalizes Tasks and ISR, and provides the common attributes like the activation that is at runtime level represented by a Stimulus. A Task contains calls either to other Tasks (via inter process activation) or Runnables. These types of calls are included in the callGraph attribute. 
+Tasks in the AMALTHEA software model are the abstract class Process generalizes Tasks and ISR, and provides the common attributes like the activation that is at runtime level represented by a Stimulus. A Task contains calls either to other Tass (via inter process activation) or Runnables. These types of calls are included in the callGraph attribute. 
 
 Task structure and creation for RMS
 -----------------------------------
-Rate Monotonic Scheduler is based on the RTFParallella
-
-
+Rate Monotonic Scheduler is based on the Project RTFParallella_. 
 
 Task structure and creation for FreeRTOS
 ----------------------------------------
@@ -69,6 +67,7 @@ Task structure and creation for POSIX
 -----------------------------------------
 
 .. code-block:: c
+
 	pthread_create (&thread[<Task2ThreadMapID>], &attr, v<TaskName>, (void *)arg);
 
 Argument 
@@ -112,3 +111,5 @@ Like in FreeRTOS, Task handler have infinite loop and here pthread_exit does the
 Note
 -----
 LET(Logical Execution Time) is another semantics which is used often in the research area as this is very easy in analysis of task. In both POSIX and FreeRTOS, the cOUT operation is performed after the vTaskDelayUntil and pthread_exit in FreeRTOS and POSIX respectively. In RMS both implicit and LET frame works are available it is altered just by selecting appropriate framework for execution.
+
+.. _RTFParallella : https://rtfparallella.readthedocs.io/en/latest/index.html
