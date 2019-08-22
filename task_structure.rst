@@ -11,6 +11,7 @@ Task structure and creation for RMS
 
 Argument
 
+
 .. code-block:: c
 
 	void v<TaskName>( )
@@ -35,12 +36,12 @@ Task structure and creation for FreeRTOS
 		NULL2 );
 
 Argument
-* TaskName - pointer to task Handler function
-* "<TaskName>" - Name of the task, used during debugging.
-* configMINIMAL_STACK_SIZE - Stack size allocated for the specific task.
-* Null1 - Task parameter passed when task is called
-* <TaskPriority> - Priority of task based on which scheduling happens.
-* NULL2 - Used to pass a handle to the created task out of the xTaskCreate() function. xCreatedTask is optional and set to NULL in CdGen.
+*	TaskName - pointer to task Handler function
+*	"<TaskName>" - Name of the task, used during debugging.
+*	configMINIMAL_STACK_SIZE - Stack size allocated for the specific task.
+* 	Null1 - Task parameter passed when task is called
+* 	<TaskPriority> - Priority of task based on which scheduling happens.
+* 	NULL2 - Used to pass a handle to the created task out of the xTaskCreate() function. xCreatedTask is optional and set to NULL in CdGen.
 
 .. code-block:: c
 
@@ -84,10 +85,10 @@ Task structure and creation for POSIX
 	pthread_create (&thread[<Task2ThreadMapID>], &attr, v<TaskName>, (void *)arg);
 
 Argument 
-* thread -  returns the thread id.
-* attr - Set to NULL if default thread attributes are used.
-* v<TaskName> - Task handler.
-* *arg - pointer to argument of function. 
+*	thread -  returns the thread id.
+*	attr - Set to NULL if default thread attributes are used.
+*	v<TaskName> - Task handler.
+*	*arg - pointer to argument of function. 
 
 .. code-block:: c
 
@@ -122,4 +123,4 @@ Like in FreeRTOS, Task handler have infinite loop and here pthread_exit does the
 
 Note
 -----
-LET(Logical Execution Time) is another semantics which is used often in the research area as this is very easy in analysis of task. In both POSIX and FreeRTOS, the cOUT operation is performed after the vTaskDelayUntil and pthread_exit in FreeRTOS and POSIX respectively. 
+LET(Logical Execution Time) is another semantics which is used often in the research area as this is very easy in analysis of task. In both POSIX and FreeRTOS, the cOUT operation is performed after the vTaskDelayUntil and pthread_exit in FreeRTOS and POSIX respectively. In RMS both implicit and LET frame works are available it is altered just by selecting appropriate framework for execution.
