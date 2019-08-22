@@ -3,6 +3,9 @@ GUI Layout for CDGen
 ##############################
 In order to build Graphical User Interface(GUI) for the CDGen application we used Java Swing. 
 
+.. image:: GUICDGen.png
+	:align: center
+
 Scheduler Option
 -----------------
 In order to allocate a specific task at a specific time a scheduler becomes inevitable in this situtaiton, CDGen offers 3 different scheduling options such as FreeRTOS, POSIX and Rate Monotonic Schedulers. 
