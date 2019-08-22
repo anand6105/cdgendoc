@@ -5,28 +5,13 @@ Tasks in the AMALTHEA software model are the abstract class Process generalizes 
 
 Task structure and creation for RMS
 -----------------------------------
-.. code-block:: c
-
-	<Explain MBS calls and functions in abstract>
-
-Argument
-
-
-.. code-block:: c
-
-	void v<TaskName>( )
-	{
-		updateDebugFlag(<debugMessage>);
-		sleepTimerMs(<TaskExecutionTime> , <TaskID>);
-		<taskSpecificCounter>++;
-		traceTaskPasses(<TaskID>, <taskSpecificCounter>);
-		traceRunningTask(<TaskID>);
-	}
+Rate Monotonic Scheduler is based on the RTFParallella
 
 
 
 Task structure and creation for FreeRTOS
 ----------------------------------------
+
 .. code-block:: c
 
 	xTaskCreate( v<TaskName>, "<TaskName>", 
@@ -36,6 +21,7 @@ Task structure and creation for FreeRTOS
 		NULL2 );
 
 Argument
+
 *	TaskName - pointer to task Handler function
 *	"<TaskName>" - Name of the task, used during debugging.
 *	configMINIMAL_STACK_SIZE - Stack size allocated for the specific task.
@@ -81,10 +67,12 @@ In FreeRTOS Task handler are running in an infinite loop however the vTaskDelayU
 
 Task structure and creation for POSIX
 -----------------------------------------
+
 .. code-block:: c
 	pthread_create (&thread[<Task2ThreadMapID>], &attr, v<TaskName>, (void *)arg);
 
 Argument 
+
 *	thread -  returns the thread id.
 *	attr - Set to NULL if default thread attributes are used.
 *	v<TaskName> - Task handler.

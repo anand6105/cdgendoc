@@ -15,9 +15,17 @@ In order to allocate a specific task at a specific time a scheduler becomes inev
 
 Task Preemptive Option
 -------------------------
+* Co-operative Scheduling: Once started, a task within a co-operative scheduling system will continue to run until it relinquishes control. The call will enable the scheduler which will then check the states of all the tasks within the system and schedule the highest priority ready task.
 
-Hardware Selection
+* Pre-emptive scheduling retains many of the features described above e.g. tasks, task states/queues/ priorities, etc. However, there is one very important difference. In a pre-emptive model, tasks can be forcibly suspended. This is instigated by an interrupt on the CPU. These interrupts may be from external systems as above or possibly from the system clock. The difference here is that the scheduler is invoked following one of these system events. If a sensor detects an alarm condition, the input circuitry can generate an interrupt to the CPU.
+
+Source selection
 -------------------------
+Despite the generation, there are also other scheduler specific files which are either licensed under different open source or available ready in other projects. These folder are available in 
+
 
 Model selection
 -------------------------
+Despite of few models available within the tool we also extend our support for the other models and inorder to be more dynamic we adapted a open selection for model too. Deviating from our initial proposal of a drop down option. 
+
+*Models should be of version 0.9.5 which can be migrated with a inbuilt tool which comes with APP4MC.

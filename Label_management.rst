@@ -23,17 +23,13 @@ Below are function template for read and write
 
    <labelDataType> shared_label_<labelSize>_read(int label_indx)
 
+In read operation a particular memory index is targeted and read whereas in the write operation the same memory from which it is read is written back with payload parameter holding the value to be written, It is achieved by indexing the shared labels. 
 
 Label management for core labels
 ---------------------------------
 Core labels are shared among tasks which are mapped to the same core. As the file structure are devised in such a way those are core specific. In adittion to the read and the write operations which are performed from Copy In and Copy out function respectively in the label file it is also intialised outside as a generic one.
 
+*Inorder to encounter each cOUT operation, Incrementation of the variable is implemented just before the write operation.
 
-Label management for task labels
------------------------------------------
-Task labels are specific to a certain task(s). They are intialise within the task handler. These memory are local to the task.
 
-Extension Scope:
----------------
 
-* Rewriting label management based on the mapping model to give more space for memory management analysis.

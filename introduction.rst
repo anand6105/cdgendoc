@@ -27,8 +27,12 @@ There are 6 main scheduling configuration available in this tool:
 
 Deliverables
 -------------------------
-*	Source Code for the CDGen
+*	SourceCode_ for the CDGen
 *	Documentation
+
+.. _SourceCode : 
+
+
 
 
 
