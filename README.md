@@ -1,2 +1,2 @@
-# cdgendoc[documentation]
-[documentation]:https://github.com/rprasathg/cdgendoc
+# cdgendoc[cdgendoc]
+[cdgendoc]:https://github.com/rprasathg/cdgendoc
