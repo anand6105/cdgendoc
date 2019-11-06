@@ -1,3 +1,3 @@
 # [cdgendoc]
-[cdgendoc]:https://github.com/rprasathg/cdgendoc
-cdgendoc
+[cdgendoc]:https://cdgendoc.readthedocs.io/en/latest/
+
